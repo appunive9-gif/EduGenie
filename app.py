@@ -23,7 +23,7 @@ def ask():
     if not api_key:
         return jsonify({"answer": "Add GEMINI_API_KEY to your .env file."}), 500
     try:
-        model = genai.GenerativeModel("gemini-2.5-flash")
+        model = genai.GenerativeModel("gemini-3.8-flash")
         prompt = f"""You are EduGenie, a friendly educational assistant.
 Explain this topic clearly for a college student using simple language and examples:
 
