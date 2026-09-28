@@ -12,8 +12,7 @@ if api_key:
 
 @app.route("/")
 def home():
-    return 
-render_template("index.html")
+    return render_template("index.html")
 
 @app.route("/ask", methods=["POST"])
 def ask():
